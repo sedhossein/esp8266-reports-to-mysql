@@ -1,4 +1,4 @@
-<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/NodeMCU_DEVKIT_1.0.jpg"></p>
+<p align="center"><img src="https://www.robotics.org.za/image/cache/catalog/generic/NODEMCU/NODEMCU-000-500x500.jpg"></p>
 <hr>
 
 
@@ -32,7 +32,7 @@ to database .
 - **[Or esp8266 (or nodeMCU 12e)](https://en.wikipedia.org/wiki/NodeMCU)**
 - **[C or C++ knowledge for arduino coding](https://www.tutorialspoint.com/cplusplus/index.htm)**
 - **[PHP knowledge for server codes](http://www.php.net/)**
-- **[Database knowledge for store data](https://www.mysql.com/)
-- **[A little electronic tricks](https://circuits.io/lab/)
+- **[Database knowledge for store data](https://www.mysql.com/)**
+- **[A little electronic tricks](https://circuits.io/lab/)**
 
 
