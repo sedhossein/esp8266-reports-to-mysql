@@ -1,2 +1,0 @@
-CREATE TABLE YourTable (data char);  
-INSERT INTO YourTable VALUES (12,'data');  
