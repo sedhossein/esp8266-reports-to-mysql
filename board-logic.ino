@@ -26,19 +26,18 @@ double totalMilliLitres;
 
 unsigned long oldTime;
 
-char ssid[] = "";  //wifi name
-char password[] = ""; //wifi password 
+char ssid[] = ""; // WIFI name
+char password[] = ""; // WIFI password 
 int status = WL_IDLE_STATUS;
 WiFiClient client;
 
 char server[] = "XX.XXX.XXX.XXX"; //Server
 
 // ========== Functions ==========
-void pulseCounter()//DEBI Frequency
+void pulseCounter() // DEBI Frequency
 {
   pulseCount++;
 }
-
 
 void setup() 
 {
@@ -46,7 +45,6 @@ void setup()
     delay(10); 
     connectWifi();
   
-
     pinMode(sensorPin, INPUT);
     digitalWrite(sensorPin, HIGH);
 
@@ -60,7 +58,6 @@ void setup()
 
     attachInterrupt(sensorInterrupt, pulseCounter, FALLING); // Setup Interrupt 
 }
-
 
 void connectWifi() // Attempt to connect to wifi network
 {
@@ -80,11 +77,9 @@ void connectWifi() // Attempt to connect to wifi network
     Serial.println(WiFi.localIP());
 }
 
-
-
 void loop() 
 {
-    if((millis() - oldTime) > 1000)    // Only process counters once per second
+    if((millis() - oldTime) > 1000) // Proccess will be calculate just once in second
     { 
         detachInterrupt(sensorInterrupt);
         flowRate = ((1000.0 / (millis() - oldTime)) * pulseCount) / calibrationFactor;
@@ -132,7 +127,7 @@ void loop()
             Serial.println("ARDUINO: forming HTTP request message");
     
             client.print("GET ");
-            client.print("/flowMeter.php?");//php code for database
+            client.print("/flowMeter.php?"); // server side address
             client.print(DatatoSend);
             client.print(" HTTP/1.1");
             client.print("\r\n");
